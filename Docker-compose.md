@@ -167,10 +167,8 @@ Samba es un conjunto de programas que trabajan juntos para permitir a los client
 - restart: always: Configura el contenedor para que siempre se reinicie automáticamente si se detiene o falla.
 
 - command: Especifica el comando a ejecutar cuando el contenedor se inicie. Aquí, configura un usuario (juan) con la contraseña (juan_plexÑ) y dos comparticiones de Samba:
-
-    . media mapeado a /media con permisos de lectura/escritura (yes) pero sin permisos de solo lectura (no).
-
-    . downloads mapeado a /downloads con permisos de lectura/escritura (yes) pero sin permisos de solo lectura (no).
+    - media mapeado a /media con permisos de lectura/escritura (yes) pero sin permisos de solo lectura (no).
+    - downloads mapeado a /downloads con permisos de lectura/escritura (yes) pero sin permisos de solo lectura (no).
 
 - stdin_open: true: Mantiene el estándar de entrada (stdin) abierto, lo que permite la interacción con el contenedor si es necesario.
 
@@ -181,6 +179,5 @@ Samba es un conjunto de programas que trabajan juntos para permitir a los client
 - ports: Publica los puertos del contenedor en el host. Samba utiliza los puertos 139 y 445 para compartir archivos. Este mapeo permite acceder a Samba desde el host a través de estos puertos.
 
 - volumes: Mapea directorios del host a directorios dentro del contenedor.
-
-       . ${MEDIA} en el host se mapea a /media en el contenedor.
-       . ${STORAGE}/torrents en el host se mapea a /downloads en el contenedor.
+  - ${MEDIA} en el host se mapea a /media en el contenedor.
+  - ${STORAGE}/torrents en el host se mapea a /downloads en el contenedor.
