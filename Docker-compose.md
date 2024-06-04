@@ -162,16 +162,15 @@ services:
 
 Samba es un conjunto de programas que trabajan juntos para permitir a los clientes acceder a espacios de archivos del servidor e impresoras mediante los protocolos SMB (Server Message Block) y CIFS (Common Internet Filesystem).
 
-```
 - image: dperson/samba: Utiliza la imagen dperson/samba de Docker Hub para configurar un servidor Samba. Esta imagen no tiene etiquetas de versiones específicas, solo la versión latest.
 
 - restart: always: Configura el contenedor para que siempre se reinicie automáticamente si se detiene o falla.
 
 - command: Especifica el comando a ejecutar cuando el contenedor se inicie. Aquí, configura un usuario (juan) con la contraseña (juan_plexÑ) y dos comparticiones de Samba:
 
-    . media mapeado a /media con permisos de lectura/escritura (yes) pero        sin permisos de solo lectura (no).
+    . media mapeado a /media con permisos de lectura/escritura (yes) pero sin permisos de solo lectura (no).
 
-    . downloads mapeado a /downloads con permisos de lectura/escritura           (yes) pero sin permisos de solo lectura (no).
+    . downloads mapeado a /downloads con permisos de lectura/escritura (yes) pero sin permisos de solo lectura (no).
 
 - stdin_open: true: Mantiene el estándar de entrada (stdin) abierto, lo que permite la interacción con el contenedor si es necesario.
 
@@ -184,6 +183,4 @@ Samba es un conjunto de programas que trabajan juntos para permitir a los client
 - volumes: Mapea directorios del host a directorios dentro del contenedor.
 
        . ${MEDIA} en el host se mapea a /media en el contenedor.
-       . ${STORAGE}/torrents en el host se mapea a /downloads en el                 contenedor.
-
-```
+       . ${STORAGE}/torrents en el host se mapea a /downloads en el contenedor.
