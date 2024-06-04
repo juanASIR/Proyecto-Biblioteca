@@ -30,4 +30,22 @@ Todos los comandos de la instalación de docker vienen de su página oficial, en
 
 <img src="IMG/6.PNG" alt=""/>
 
+---
+
+Ahora procederemos a preparar la carpeta donde montaremos docker (Tambien metemos en docker a nuestro usuario). Creando el directorio /mnt/storage/ que veremos mas adelante.
+
+<img src="IMG/7.PNG" alt=""/>
+
+<img src="IMG/8.PNG" alt=""/>
+
+<img src="IMG/9.PNG" alt=""/>
+
+<img src="IMG/10.PNG" alt=""/>
+
+
+
+
+
+
+
 
