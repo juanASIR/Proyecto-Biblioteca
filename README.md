@@ -8,7 +8,7 @@ Este proyecto describe cómo configurar una biblioteca multimedia utilizando PLE
 
 ## docker-compose
 
-1. Crear un archivo `docker-compose.yml` con la configuración de los servicios necesarios (Plex, Transmission, FlexGet).
+1. Crear un archivo `docker-compose.yml` con la configuración de los servicios necesarios (Samba, Plex, Transmission, FlexGet).
 2. Levantar los contenedores con `docker-compose up -d`.
 
 ## Implementación
