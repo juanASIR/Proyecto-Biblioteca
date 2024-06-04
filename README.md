@@ -25,4 +25,6 @@ Este proyecto describe cómo configurar una biblioteca multimedia utilizando PLE
 
 Este proyecto está licenciado bajo los términos de la [Licencia Creative Commons](https://creativecommons.org/licenses/by/4.0/).
 
+[![Licencia Creative Commons](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/)
+
 
