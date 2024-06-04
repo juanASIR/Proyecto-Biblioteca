@@ -29,6 +29,11 @@ A continuación, se detallan los pasos para la preparación del entorno, configu
 1. Verificar que Plex haya indexado correctamente los archivos multimedia.
 2. Disfrutar del contenido organizado en tu biblioteca Plex.
 
+## Bibliografía
+
+- [Documentación de Docker](https://docs.docker.com/manuals/)
+- [pablopks/plex-rpi](https://github.com/pablokbs/plex-rpi)
+
 ## Licencia
 
 Este proyecto está licenciado bajo los términos de la [Licencia Creative Commons](https://creativecommons.org/licenses/by/4.0/).
