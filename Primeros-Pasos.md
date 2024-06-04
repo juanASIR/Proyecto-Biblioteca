@@ -7,3 +7,15 @@ Una vez tengamos operativa nuestra máquina virtual, procederemos a meter a nues
 <img src="IMG/1.PNG" alt="" width="600" height="400"/>
 
 ---
+
+Tras esto, permitimos que dicho usuario acceda a través de ssh, y comprobamos el servicio.
+
+<img src="IMG/2.PNG" alt="" width="600" height="400"/>
+
+---
+
+Ahora ya podemos empezar a instalar los paquetes previos a la instalación de docker (Vienen en la bibliografía)
+
+<img src="IMG/3.PNG" alt="" width="600" height="400"/>
+
+
