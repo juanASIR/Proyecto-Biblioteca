@@ -17,7 +17,7 @@ A continuación, se detallan los pasos para la preparación del entorno, configu
 ## Docker-compose
 
   2. [Crear un archivo `docker-compose.yml` con la configuración de los servicios necesarios (Samba, Plex, Transmission, FlexGet).](Docker-compose.md)
-  3. [Levantar los contenedores con `docker-compose up -d`.](docker-compose up -d.md)
+  3. [Levantar los contenedores con `docker-compose up -d`.](docker-compose-up-d.md)
 
 ## Implementación
   
