@@ -12,7 +12,7 @@ A continuación, se detallan los pasos para la preparación del entorno, configu
 
 ## Preparación del entorno
 
-  1. [Instalar Docker y Docker Compose.](Primeros-pasos.md)
+  1. [Instalar Docker y Docker Compose.](Primeros-Pasos.md)
 
 ## Docker-compose
 
