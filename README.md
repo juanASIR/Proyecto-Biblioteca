@@ -21,8 +21,8 @@ A continuación, se detallan los pasos para la preparación del entorno, configu
 
 ## Implementación
   
-  4. Configurar FlexGet para descargar y organizar el contenido.
-  5. Asegurarse de que los permisos de las carpetas sean correctos para que Plex pueda acceder a ellas.
+  4. Configurar directorios FlexGet.
+  5. Configurar Transmission.
 
 ## Resultados
 
