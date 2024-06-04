@@ -4,18 +4,18 @@ En primer lugar debemos señalar que dicho proyecto se hizo sobre una máquina v
 
 Una vez tengamos operativa nuestra máquina virtual, procederemos a meter a nuestro usuario en el fichero sudoers, con el objetivo de intentar utilizar lo menos posible el sudo, debido a ciertas complicaciones que nos podrían dar en un futuro con el tema de permisos etc.
 
-<img src="IMG/1.PNG" alt="" width="600" height="400"/>
+<img src="IMG/1.PNG" alt=""/>
 
 ---
 
 Tras esto, permitimos que dicho usuario acceda a través de ssh, y comprobamos el servicio.
 
-<img src="IMG/2.PNG" alt="" width="600" height="400"/>
+<img src="IMG/2.PNG" alt=""/>
 
 ---
 
 Ahora ya podemos empezar a instalar los paquetes previos a la instalación de docker (Vienen en la bibliografía)
 
-<img src="IMG/3.PNG" alt="" width="600" height="400"/>
+<img src="IMG/3.PNG" alt=""/>
 
 
