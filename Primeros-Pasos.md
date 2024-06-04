@@ -42,6 +42,18 @@ Ahora procederemos a preparar la carpeta donde montaremos docker (Tambien metemo
 
 <img src="IMG/10.PNG" alt=""/>
 
+---
+
+## Instalación Docker-compose
+
+En este caso, al instalar docker docker no se instala docker-compose, para ello utilizaremos los siguiente comandos.
+
+<img src="IMG/14.PNG" alt=""/>
+
+Una vez instalado ya podremos crear contenedores en un solo archivo .yml
+
+---
+
 
 
 
