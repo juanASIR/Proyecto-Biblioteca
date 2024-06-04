@@ -1,5 +1,7 @@
 # Proyecto-Biblioteca Multimedia con PLEX
 
+![Foto Proyecto](images/creative_commons.png)
+
 Este proyecto describe cómo configurar una biblioteca multimedia utilizando PLEX. 
 
 También utilizaré Samba como servidor para compartir uno o mas sistemas de archivos, Flexget para automatizar las descargas que llegan de transmission, y vincularlas directamente con nuestro plex. Todo esto dentro de Docker.
