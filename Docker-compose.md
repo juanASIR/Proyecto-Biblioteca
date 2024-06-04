@@ -2,7 +2,7 @@
 
 Es una herramienta que se utiliza para definir y ejecutar aplicaciones Docker de múltiples contenedores. Con docker-compose, puedes utilizar un archivo YAML para configurar los servicios de tu aplicación, y luego, con un solo comando, puedes crear y poner en marcha todos estos servicios.
 
-En este caso estableceremos 4 contenedores, PLEX, SAMBA, TRANSMISSION y FLEXGET. En este caso **¡¡ TENDREMOS QUE CREAR DICHO docker-compose.yml !!**
+En este caso estableceremos 4 contenedores, PLEX, SAMBA, TRANSMISSION y FLEXGET. **¡¡ TENDREMOS QUE CREAR DICHO docker-compose.yml !!**
 
 Explicaré cada punto de cada contenedor, por lo que tendré que separarlos unos de otros. Pero pondré al principio como quedaría el archivo.
 
