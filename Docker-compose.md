@@ -210,3 +210,31 @@ Es una aplicación con la que puedes convertir tu ordenador en un centro multime
 
 - **network_mode:**
   - "host": Utiliza la red del host para el contenedor. Esto solo funciona en sistemas operativos Linux.
+
+---
+
+## Transmission
+
+Transmission sirve para descargar archivos con el protocolo BitTorrent. Es una aplicación de código abierto que se centra en la facilidad de uso en vez de en las funciones adicionales, y es uno de los que menos memoria RAM consume.
+
+- **command:**
+  - transmission-daemon -f -g /config:
+        Especifica el comando a ejecutar cuando el contenedor se inicie.
+        Inicia el demonio de Transmission (transmission-daemon) con las siguientes opciones:
+            -f: Ejecuta Transmission en primer plano (foreground).
+            -g /config: Especifica la ubicación del archivo de configuración de Transmission en el directorio /config.
+
+- **volumes:** Mapea directorios del host al contenedor.
+  - ./transmission:/config: Mapea el directorio ./transmission del host al directorio /config dentro del contenedor, donde       se almacenan los archivos de configuración de Transmission.
+  - ${STORAGE}/torrents:/downloads: Mapea el directorio ${STORAGE}/torrents del host al directorio /downloads dentro del         contenedor, donde se guardarán los archivos descargados por Transmission.
+
+- **ports:**
+  - Publica los puertos del contenedor en el host.
+  - 9091:9091: Mapea el puerto 9091 del host al puerto 9091 del contenedor, que es el puerto de interfaz web de                 Transmission.
+  - 51413:51413: Mapea el puerto 51413 del host al puerto 51413 del contenedor, que es el puerto de TCP utilizado por           Transmission para la transferencia de datos.
+  - 51413:51413/udp: Mapea el puerto 51413/udp del host al puerto 51413/udp del contenedor, que es el puerto UDP utilizado      por Transmission para la transferencia de datos.
+
+- **expose:** Expone el puerto 9091 del contenedor al mundo exterior. Sin embargo, esto no es necesario ya que el puerto ya está mapeado en la sección de ports.
+
+--- 
+
