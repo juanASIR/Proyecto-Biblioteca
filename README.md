@@ -1,6 +1,6 @@
 # Proyecto-Biblioteca Multimedia con PLEX
 
-![Foto Proyecto](conjunto.jpg)
+![Foto Proyecto](/IMG/conjunto.jpg)
 
 Este proyecto describe cómo configurar una biblioteca multimedia utilizando PLEX. 
 
