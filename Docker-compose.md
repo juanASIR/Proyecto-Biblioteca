@@ -166,15 +166,17 @@ Samba es un conjunto de programas que trabajan juntos para permitir a los client
 
 - **restart:** always: Configura el contenedor para que siempre se reinicie automáticamente si se detiene o falla.
 
-- **command:** Especifica el comando a ejecutar cuando el contenedor se inicie. Aquí, configura un usuario (juan) con la contraseña (juan_plexÑ) y dos comparticiones de Samba:
+- **command:** Especifica el comando a ejecutar cuando el contenedor se inicie. Aquí, se configura un usuario con la contraseña y dos comparticiones de Samba:
     - media mapeado a /media con permisos de lectura/escritura (yes) pero sin permisos de solo lectura (no).
     - downloads mapeado a /downloads con permisos de lectura/escritura (yes) pero sin permisos de solo lectura (no).
 
-- **stdin_open:** true: Mantiene el estándar de entrada (stdin) abierto, lo que permite la interacción con el contenedor si es necesario.
+- **stdin_open:**
+  - true: Mantiene el estándar de entrada (stdin) abierto, lo que permite la interacción con el contenedor si es necesario.
 
-- **tty:** true: Asigna una terminal pseudo-TTY al contenedor, lo que es útil para la interacción.
+- **tty:**
+  - true: Asigna una terminal pseudo-TTY al contenedor, lo que es útil para la interacción.
 
-- **environment:** Configura variables de entorno dentro del contenedor. Aquí, establece la zona horaria a Europe/Madrid
+- **environment:** Configura variables de entorno dentro del contenedor. Como la zona horaria
 
 - **ports:** Publica los puertos del contenedor en el host. Samba utiliza los puertos 139 y 445 para compartir archivos. Este mapeo permite acceder a Samba desde el host a través de estos puertos.
 
@@ -204,9 +206,6 @@ Es una aplicación con la que puedes convertir tu ordenador en un centro multime
   - ${STORAGE}/Plex Media Server:/root/Library/Application Support/Plex Media Server -- Mapea el directorio ${STORAGE}/Plex Media Server del host al directorio /root/Library/Application Support/Plex Media Server dentro del contenedor.
   - ${MEDIA}:/media -- Mapea el directorio ${MEDIA} del host al directorio /media dentro del contenedor.
   - ${STORAGE}/tmp:/tmp Mapea el directorio ${STORAGE}/tmp del host al directorio /tmp dentro del contenedor.
-
-- **restart:**
-  - unless-stopped: Configura el contenedor para que se reinicie automáticamente si se detiene o falla, excepto si se detiene manualmente.
 
 - **network_mode:**
   - "host": Utiliza la red del host para el contenedor. Esto solo funciona en sistemas operativos Linux.
@@ -247,18 +246,16 @@ FlexGet es una herramienta de gestión de descargas automatizada que te permite 
 
 - **volumes:** Mapea directorios del host al contenedor.
   - ./flexget:/config: Mapea el directorio ./flexget del host al directorio /config dentro del contenedor, donde se             almacenará la configuración de FlexGet.
-  - ./flexget/custom-cont-init.d:/custom-cont-init.d: Mapea el directorio ./flexget/custom-cont-init.d del host al               directorio /custom-cont-init.d dentro del contenedor, que podría contener scripts de inicialización personalizados          para el contenedor.
+  - ./flexget/custom-cont-init.d:/custom-cont-init.d: Mapea el directorio ./flexget/custom-cont-init.d del host al               directorio /custom-cont-init.d dentro del contenedor, donde contiene el script mediainfo.sh
   - ${STORAGE}/torrents:/downloads: Mapea el directorio ${STORAGE}/torrents del host al directorio /downloads dentro del         contenedor, donde se guardarán los archivos descargados.
-  - ${MEDIA}:/storage: Mapea el directorio ${MEDIA} del host al directorio /storage dentro del contenedor, que podría
-    utilizarse para almacenar archivos descargados u otros datos relacionados con los medios.
-
+  - ${MEDIA}:/storage: Mapea el directorio ${MEDIA} del host al directorio /storage dentro del contenedor, donde se             almancenan los archivos descargados
+  - 
 - **ports:**
     Publica el puerto 5050 del contenedor en el puerto 5050 del host. Puerto para acceder a la interfaz web de FlexGet.
 
 - **environment:** Configura variables de entorno dentro del contenedor.
   - PUID=1001 y PGID=1001: Establece los IDs de usuario y grupo dentro del contenedor.
   - TORRENT_PLUGIN=transmission: Especifica el plugin de Torrent que FlexGet utilizará para las descargas, en este caso, el     plugin de Transmission.
-  - FG_WEBUI_PASSWD=123juan_plexÑ: Configura la contraseña para acceder a la interfaz web de FlexGet. Puedes cambiarla a la     que desees.
-
+  - FG_WEBUI_PASSWD=123juan_plexÑ: Configura la contraseña para acceder a la interfaz web de FlexGet. Puedes cambiarla.
 - **links:**
   - Establece un enlace con transmission. FlexGet necesita acceder al servicio de Transmission para funcionar correctamente.
