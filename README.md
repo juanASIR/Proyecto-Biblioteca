@@ -16,18 +16,18 @@ A continuación, se detallan los pasos para la preparación del entorno, configu
 
 ## docker-compose
 
-1. Crear un archivo `docker-compose.yml` con la configuración de los servicios necesarios (Samba, Plex, Transmission, FlexGet).
-2. Levantar los contenedores con `docker-compose up -d`.
+2. Crear un archivo `docker-compose.yml` con la configuración de los servicios necesarios (Samba, Plex, Transmission, FlexGet).
+3. Levantar los contenedores con `docker-compose up -d`.
 
 ## Implementación
 
-1. Configurar FlexGet para descargar y organizar el contenido.
-2. Asegurarse de que los permisos de las carpetas sean correctos para que Plex pueda acceder a ellas.
+4. Configurar FlexGet para descargar y organizar el contenido.
+5. Asegurarse de que los permisos de las carpetas sean correctos para que Plex pueda acceder a ellas.
 
 ## Resultados
 
-1. Verificar que Plex haya indexado correctamente los archivos multimedia.
-2. Disfrutar del contenido organizado en tu biblioteca Plex.
+6. Verificar que Plex haya indexado correctamente los archivos multimedia.
+7. Disfrutar del contenido organizado en tu biblioteca Plex.
 
 ## Bibliografía
 
