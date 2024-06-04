@@ -181,3 +181,43 @@ Samba es un conjunto de programas que trabajan juntos para permitir a los client
 - **volumes:** Mapea directorios del host a directorios dentro del contenedor.
   - ${MEDIA} en el host se mapea a /media en el contenedor.
   - ${STORAGE}/torrents en el host se mapea a /downloads en el contenedor.
+
+---
+
+## Plex
+
+Es una aplicación con la que puedes convertir tu ordenador en un centro multimedia utilizando el contenido digital que tengas en él. Reconoce todos los archivos multimedia que tengas alojados en la carpeta de origen, y los organiza con diferentes secciones para que los tengas relativamente organizados independientemente de que los tengas ordenados o no dentro de la carpeta de tu ordenador.
+
+- image: jaymoulin/plex:1.30.1.6562
+  - Utiliza la imagen jaymoulin/plex de Docker Hub para configurar un servidor Plex.
+  - Se especifica la versión 1.30.1.6562 de la imagen.
+
+    expose:
+        32400
+            Expone el puerto 32400 del contenedor al host.
+        33400
+            Expone el puerto 33400 del contenedor al host.
+
+    ports:
+        32400:32400
+            Mapea el puerto 32400 del host al puerto 32400 del contenedor.
+        33400:33400
+            Mapea el puerto 33400 del host al puerto 33400 del contenedor.
+
+    environment:
+        TZ=Europe/Madrid
+            Configura la variable de entorno TZ dentro del contenedor con el valor Europe/Madrid.
+
+    volumes:
+        ${STORAGE}/Plex Media Server:/root/Library/Application Support/Plex Media Server
+            Mapea el directorio ${STORAGE}/Plex Media Server del host al directorio /root/Library/Application Support/Plex Media Server dentro del contenedor.
+        ${MEDIA}:/media
+            Mapea el directorio ${MEDIA} del host al directorio /media dentro del contenedor.
+        ${STORAGE}/tmp:/tmp
+            Mapea el directorio ${STORAGE}/tmp del host al directorio /tmp dentro del contenedor.
+
+    restart: unless-stopped
+        Configura el contenedor para que se reinicie automáticamente si se detiene o falla, excepto si se detiene manualmente.
+
+    network_mode: "host"
+        Utiliza la red del host para el contenedor. Esto solo funciona en sistemas operativos Linux.
