@@ -238,3 +238,27 @@ Transmission sirve para descargar archivos con el protocolo BitTorrent. Es una a
 
 --- 
 
+## Flexget
+
+FlexGet es una herramienta de gestión de descargas automatizada que te permite automatizar la descarga y el procesamiento de contenido multimedia, como torrents, archivos NZB, feeds de sitios web. Es altamente configurable y se utiliza comúnmente para automatizar la descarga de programas de televisión, películas, música, libros electrónicos y otros tipos de archivos multimedia.
+
+- **image:** 
+  - wiserain/flexget:3.5: Utiliza la imagen wiserain/flexget de Docker Hub en su versión 3.5 para configurar el servicio        FlexGet.
+
+- **volumes:** Mapea directorios del host al contenedor.
+  - ./flexget:/config: Mapea el directorio ./flexget del host al directorio /config dentro del contenedor, donde se             almacenará la configuración de FlexGet.
+  - ./flexget/custom-cont-init.d:/custom-cont-init.d: Mapea el directorio ./flexget/custom-cont-init.d del host al               directorio /custom-cont-init.d dentro del contenedor, que podría contener scripts de inicialización personalizados          para el contenedor.
+  - ${STORAGE}/torrents:/downloads: Mapea el directorio ${STORAGE}/torrents del host al directorio /downloads dentro del         contenedor, donde se guardarán los archivos descargados.
+  - ${MEDIA}:/storage: Mapea el directorio ${MEDIA} del host al directorio /storage dentro del contenedor, que podría
+    utilizarse para almacenar archivos descargados u otros datos relacionados con los medios.
+
+- **ports:**
+    Publica el puerto 5050 del contenedor en el puerto 5050 del host. Puerto para acceder a la interfaz web de FlexGet.
+
+- **environment:** Configura variables de entorno dentro del contenedor.
+  - PUID=1001 y PGID=1001: Establece los IDs de usuario y grupo dentro del contenedor.
+  - TORRENT_PLUGIN=transmission: Especifica el plugin de Torrent que FlexGet utilizará para las descargas, en este caso, el     plugin de Transmission.
+  - FG_WEBUI_PASSWD=123juan_plexÑ: Configura la contraseña para acceder a la interfaz web de FlexGet. Puedes cambiarla a la     que desees.
+
+- **links:**
+  - Establece un enlace con transmission. FlexGet necesita acceder al servicio de Transmission para funcionar correctamente.
