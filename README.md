@@ -1,6 +1,6 @@
 # Proyecto-Biblioteca Multimedia con PLEX
 
-<img src="IMG/conjunto.jpg" alt="Proyecto" width="900" height="400"/>
+<img src="IMG/conjunto.jpg" alt="Proyecto" width="900" height="350"/>
 
 Este proyecto describe cómo configurar una biblioteca multimedia utilizando PLEX. 
 
