@@ -18,4 +18,16 @@ Ahora ya podemos empezar a instalar los paquetes previos a la instalación de do
 
 <img src="IMG/3.PNG" alt=""/>
 
+---
+
+## Instalación Docker
+
+Todos los comandos de la instalación de docker vienen de su página oficial, en el caso de la bibliografía mostrada de pablokbs viene desactualizada. Estos son los pasos a seguir.
+
+<img src="IMG/4.PNG" alt=""/>
+
+<img src="IMG/5.PNG" alt=""/>
+
+<img src="IMG/6.PNG" alt=""/>
+
 
