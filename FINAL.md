@@ -17,5 +17,17 @@ Si aparece asi es que ha sido capaz de sincronizarlo. Por lo tanto no solo apare
 
 ---
 
+![](/IMG/28.PNG)
 
+---
+
+![](/IMG/29.PNG)
+
+---
+
+![](/IMG/30.PNG)
+
+---
+
+Como vemos, no solo aparece la pelicua en nuestro plex y puede visualizarse (previa instalacion de vlc), sino que tambien aparece una descripción general de dicha película.
 
