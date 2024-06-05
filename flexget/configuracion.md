@@ -14,3 +14,8 @@ El primero es el **config.yml** donde configuraremos puntos como:
 
 ---
 
+Lo siguiente sería entrar en el directorio de custom-cont-init.d y crear el script **mediainfo.sh**, el cual servirá para :
+
+  - Obtener información técnica y etiquetas sobre archivos multimedia (audio y video).
+  - Y con ffmpeg: Para manejar multimedia, usado para convertir, grabar, y transmitir archivos de audio y video.
+  - Es decir prepara el entorno del contenedor instalando estas dos herramientas esenciales para la gestión y procesamiento de archivos multimedia.
