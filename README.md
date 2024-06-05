@@ -26,8 +26,8 @@ A continuación, se detallan los pasos para la preparación del entorno, configu
 
 ## Resultados
 
-  6. Verificar que Plex haya indexado correctamente los archivos multimedia.
-  7. Disfrutar del contenido organizado en tu biblioteca Plex.
+  6. PLEX.
+  7. TRANSMISSION.
 
 ## Bibliografía
 
