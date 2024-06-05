@@ -27,7 +27,7 @@ A continuación, se detallan los pasos para la preparación del entorno, configu
 ## Resultados
 
   6. [PLEX.](PLEX.md)
-  7. TRANSMISSION.
+  7. [TRANSMISSION.](TRANSMISSION.md)
 
 ## Bibliografía
 
