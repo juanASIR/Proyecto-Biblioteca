@@ -22,7 +22,7 @@ A continuación, se detallan los pasos para la preparación del entorno, configu
 ## Implementación
   
   4. [Configurar directorios FlexGet.](/flexget/)
-  5. Configurar Transmission.
+  5. [Configurar Transmission.](/transmission/)
 
 ## Resultados
 
