@@ -7,3 +7,15 @@ En las configuraciones vimos que en el navegador tendriamos que poner localhost:
 
 ---
 
+Una vez dentro tendríamos que ir a alguna página y copiar el enlace de descarga. 
+
+¡¡¡ DEBO SEÑALAR ANTES QUE TODO ESTO ES CON FINES EDUCATIVOS, NO ILEGALES !!!
+
+Teniendo el enlace nos vamos a "Add Torrent" nos saldrá la ruta donde se va a descargar, pegamos el enlace y empezamos a descargar.
+
+En la imagen se ve como una especie de nave espacial, si aparece su descarga irá lo mas rapido posible, si aparece un caracol se descargará con el minimo establecido en la configuración.
+
+![](/IMG/24.PNG)
+
+---
+
