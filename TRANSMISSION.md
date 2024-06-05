@@ -15,7 +15,15 @@ Teniendo el enlace nos vamos a "Add Torrent" nos saldrá la ruta donde se va a d
 
 En la imagen se ve como una especie de nave espacial, si aparece su descarga irá lo mas rapido posible, si aparece un caracol se descargará con el minimo establecido en la configuración.
 
+
 ![](/IMG/24.PNG)
 
 ---
+
+Vemos como al final de la imagen aparece una ruta. Como vimos en la configuración es un volumen creado asociado a una ruta local, /mnt/storage/torrents/complete.
+
+![](/IMG/25.PNG)
+
+---
+
 
